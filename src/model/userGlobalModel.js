@@ -15,8 +15,8 @@ const userGlobal = new mongoose.Schema({
     },
     typeUser: {
         type: String,
-        enum: ['admin_global'],
-        default: 'admin_global',
+        enum: ['Admin_global'],
+        default: 'Admin_global',
     }
 })
 

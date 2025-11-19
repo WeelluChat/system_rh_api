@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
 const candidateModel = new mongoose.Schema({
+    idEmpresa: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Empresa',
+        required: true,
+    },
     name: {
         type: String,
         required: true,
