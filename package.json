@@ -6,8 +6,7 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "moment-timezone": "^0.6.0",
-    "mongoose": "^8.19.3",
-    "nodemon": "^3.1.11"
+    "mongoose": "^8.19.3"
   },
   "name": "system_rh_api",
   "version": "1.0.0",
@@ -18,5 +17,8 @@
     "start": "nodemon server.js"
   },
   "author": "Bucar",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }

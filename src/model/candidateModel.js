@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const formularioSchema = require('../model/formulario')
 
 const candidateModel = new mongoose.Schema({
     idEmpresa: {
@@ -51,7 +52,8 @@ const candidateModel = new mongoose.Schema({
     curriculoLink: {
         type: String,
         required: false,
-    }
+    },
+    formulario: [formularioSchema]
 })
 
 module.exports = mongoose.model('Candidate', candidateModel);

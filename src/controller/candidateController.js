@@ -37,7 +37,7 @@ exports.createCandidates = async (req, res) => {
         const {
             name, email, phone, vaga, status, expectativaSalary,
             ageExperience, dataEntrevista, chamadoIntrevista,
-            descricaoUser, curriculoLink
+            descricaoUser, curriculoLink, formulario
         } = req.body;
 
         const newCandidate = await Candidate.create({
@@ -52,6 +52,7 @@ exports.createCandidates = async (req, res) => {
             chamadoIntrevista,
             descricaoUser,
             curriculoLink,
+            formulario,
             idEmpresa: empresaId
         });
 
